@@ -27,7 +27,6 @@ observables_labels = ["IZ", "IX", "ZI", "XI", "ZZ", "XX"]
 observables = [SparsePauliOp(label) for label in observables_labels]
 
 
- 
 service = QiskitRuntimeService()
  
 backend = service.least_busy(simulator=False, operational=True)
